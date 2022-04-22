@@ -1,16 +1,21 @@
 import './App.css';
+import React from 'react';
+import Navigation from './components/Nav';
+import Home from './components/sections/homePage';
+import ReviewPage from './components/sections/reviewPage';
+import VideoContent from './components/sections/video-content';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-         hello Jen
-        </p>
-        
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navigation />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/ReviewPage' exact element={<ReviewPage />} />
+          <Route path='/VideoContent' exact element={<VideoContent />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
 
