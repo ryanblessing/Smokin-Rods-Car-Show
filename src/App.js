@@ -1,10 +1,11 @@
-import './App.css';
+import './index.css';
 import React from 'react';
 import Navigation from './components/Nav';
 import Home from './components/sections/homePage';
 import ReviewPage from './components/sections/reviewPage';
 import VideoContent from './components/sections/video-content';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
