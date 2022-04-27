@@ -1,16 +1,20 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel'
+import fakepic1 from '../../assets/fakepic1.jpg'
+import fakepic2 from '../../assets/fakepic2.jpg'
+import fakepic3 from '../../assets/fakepic3.jpg'
 
 export default function Home() {
     return (
         <>
             <div>    
+                
                 <Carousel fade>
 
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=First slide&bg=373940"
+                            src={fakepic1}
                             alt="First slide"
                         />
                         <Carousel.Caption>
@@ -22,7 +26,7 @@ export default function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Second slide&bg=282c34"
+                            src={fakepic2}
                             alt="Second slide"
                         />
 
@@ -35,7 +39,7 @@ export default function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Third slide&bg=20232a"
+                            src={fakepic3}
                             alt="Third slide"
                         />
 
@@ -44,6 +48,7 @@ export default function Home() {
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                 </Carousel>
             </div>
         </>
