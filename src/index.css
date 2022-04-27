@@ -1,6 +1,7 @@
 
 *{
   background-color: black;
+  
 }
 body {
   margin: 0;
@@ -17,3 +18,11 @@ code {
 }
 
 /*Navigation page*/
+
+
+/*Carousel*/
+#fake-pics{
+  padding: 100px;
+  margin: auto;
+  image-resolution: auto;
+}

@@ -14,6 +14,7 @@ export default function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
+                            id="fake-pics"
                             src={fakepic1}
                             alt="First slide"
                         />
@@ -26,6 +27,7 @@ export default function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
+                            id="fake-pics"
                             src={fakepic2}
                             alt="Second slide"
                         />
@@ -39,6 +41,7 @@ export default function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
+                            id="fake-pics"
                             src={fakepic3}
                             alt="Third slide"
                         />

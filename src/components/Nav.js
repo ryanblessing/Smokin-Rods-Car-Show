@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap'
 
 
 function Navigation() {
@@ -27,6 +27,22 @@ function Navigation() {
                                 Review Page
                             </Nav.Link>
                         </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link href='/teamPage' className="nav-links">
+                                Our Team
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Form className="d-flex">
+                            <FormControl
+                                type="search"
+                                placeholder="Search"
+                                className="me-2"
+                                aria-label="Search"
+                            />
+                            <Button variant="outline-success">Search</Button>
+                        </Form>
                     </Nav>
                 </Container>
             </Navbar>
