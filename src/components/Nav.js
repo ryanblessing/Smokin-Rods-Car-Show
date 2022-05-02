@@ -8,7 +8,7 @@ function Navigation() {
         <>
             <Navbar className="Navbar" collapseOnSelect expand='lg' variant="dark" sticky="top">
                 <Container fluid>
-                    <Navbar.Brand href="/">Smoking Rods Car Show</Navbar.Brand>
+                    <Navbar.Brand href="/" variant="dark">Smoking Rods Car Show</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Item>
                             <Nav.Link href='/' className="nav-links">
@@ -34,7 +34,7 @@ function Navigation() {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Form className="d-flex">
+                        <Form id="nav-search-form" className="d-flex">
                             <FormControl
                                 type="search"
                                 placeholder="Search"
