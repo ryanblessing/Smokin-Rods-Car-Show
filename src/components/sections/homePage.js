@@ -1,19 +1,18 @@
 import React, {useState} from "react";
+import moment from "moment";
 import Carousel from 'react-bootstrap/Carousel'
 import fakepic1 from '../../assets/fakepic1.jpg'
 import fakepic2 from '../../assets/fakepic2.jpg'
 import fakepic3 from '../../assets/fakepic3.jpg'
-import Calendar from 'react-calendar'
-import { Container } from "react-bootstrap";
-import moment from 'moment'
+import Calendar from "../calendar/index.jsx"
 
 
 export default function Home() {
-    
+    const [value, setValue] = useState(moment())
 
     return (
         <>
-            <div>     
+            <div>
                 <Carousel fade>
                     <Carousel.Item>
                         <img
@@ -57,26 +56,9 @@ export default function Home() {
                     </Carousel.Item>
 
                 </Carousel>
-
-                <div className='calendar'>
-                    <Calendar
-                        startDate={moment()}
-                        endDate={moment().endOf('year')}
-                        size={12}
-                        mods={
-                          [
-                            {
-                              date: moment(),
-                              classNames: [ 'current' ],
-                              component: [ 'day', 'month', 'week' ]
-                            }
-                          ]
-                        }
-                    />
-
-                </div>
-
-                
+                <section>
+                    <Calendar value={value} onChange={setValue}/>
+                </section>
             </div>
         </>
     )
