@@ -37,7 +37,7 @@ function Navigation() {
 
             <Nav.Item>
               <Nav.Link href="/calendarPage" className="nav-links">
-                Calendar
+                Events
               </Nav.Link>
             </Nav.Item>
 
