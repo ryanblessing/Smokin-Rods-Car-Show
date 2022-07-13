@@ -2,29 +2,39 @@ import React from "react";
 
 const UpcomingEvents = () => {
   return (
-    <div className="container">
-      Upcoming Events
+    <section className="container">
+      <h2 className="header">Upcoming Events:</h2>
+
+      <hr />
       <ul className="list">
-        <li className="title">title</li>
-        <li className="date">date</li>
-        <li className="time">time</li>
+        <li className="title">Title</li>
+        <li className="date">Date:</li>
+        <li className="time">Time:</li>
       </ul>
+
+      <hr />
       <ul className="list">
-        <li className="title">title</li>
-        <li className="date">date</li>
-        <li className="time">time</li>
+        <li className="title">Title</li>
+        <li className="date">Date:</li>
+        <li className="time">Time:</li>
       </ul>
+
+      <hr />
       <ul className="list">
-        <li className="title">title</li>
-        <li className="date">date</li>
-        <li className="time">time</li>
+        <li className="title">Title</li>
+        <li className="date">Date:</li>
+        <li className="time">Time:</li>
       </ul>
+
+      <hr />
       <ul className="list">
-        <li className="title">title</li>
-        <li className="date">date</li>
-        <li className="time">time</li>
+        <li className="title">Title</li>
+        <li className="date">Date:</li>
+        <li className="time">Time:</li>
       </ul>
-    </div>
+
+      <hr />
+    </section>
   );
 };
 
