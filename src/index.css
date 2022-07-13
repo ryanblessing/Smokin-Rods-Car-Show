@@ -28,24 +28,28 @@ code {
 }
 
 /* upcoming events section */
-div.container {
+.container,
+.list {
+  background-color: whitesmoke;
+  font-family: monospace;
+}
+
+.header {
+  background-color: whitesmoke;
+  text-decoration: underline;
+}
+
+.title {
+  background-color: whitesmoke;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.date,
+.time {
   background-color: whitesmoke;
 }
-ul.list {
-  border-top: 3px solid #000;
-  background-color: whitesmoke;
-  padding-top: 1em;
-}
-li.title {
-  background-color: whitesmoke;
-}
-li.date {
-  background-color: whitesmoke;
-}
-li.time {
-  background-color: whitesmoke;
-}
-div.calendar-container {
+
+.calendar-container {
   display: flex;
   flex-direction: column;
   align-items: center;
